@@ -13,45 +13,43 @@
         <div class="image-hoder">
           <img src="img.png" alt="image" />
         </div>
-        <form>
+        <form action="connect.php" method="GET">
           <h2>Register</h2>
 
           <div class="form-group">
-            <input type="text" placeholder="First Name" class="form-control" />
-            <input type="text" placeholder="Last Name" class="form-control" />
+            <input type="text" placeholder="First Name" class="form-control" name="firstName" />
+            <input type="text" placeholder="Last Name" class="form-control" name="lastName"/>
           </div>
 
           <div class="form-wrapper">
-            <input type="text" placeholder="Username" class="form-control" />
+            <input type="text" placeholder="Interested Field" class="form-control" name="interestedField"/>
           </div>
 
           <div class="form-wrapper">
             <input
-              type="text"
-              placeholder="Email Address"
-              class="form-control" />
+              type="text" placeholder="Email Address" class="form-control" name="email"/>
             
+          </div>
+        
+          <div class="form-wrapper">
+            <input type="text" placeholder="Further Studies" class="form-control" name="furtherStudies">
+          </div>
+
+
+          <div class="form-wrapper">
+            <input type="text" placeholder="Phone Number" class="form-control" name="phoneNumber">
           </div>
 
           <div class="form-wrapper">
             <select name="" id="" class="form-control">
             <option value="" disabled selected>Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
+            <option name="Gender" value="male">Male</option>
+            <option name="Gender" value="female">Female</option>
+            <option name="Gender" value="other">Other</option>
             </select>
           </div>
 
-          <div class="form-wrapper">
-            <input type="password" placeholder="Password" class="form-control">
-          </div>
-
-
-          <div class="form-wrapper">
-            <input type="password" placeholder="Comform Password" class="form-control">
-          </div>
-
-          <button>Register</button>
+          <button type="submit">Submit</button>
 
         </form>
       </div>
